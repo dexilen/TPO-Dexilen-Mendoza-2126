@@ -1,0 +1,237 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+a{
+  text-decoration: none;
+}
+.padre{
+  display: flex;
+  flex-flow: column nowrap;
+}
+.margen-interno{
+  padding: 0 50px;
+}
+  .header{
+    background: url(imagenes/landing.png);
+    background-position: center;
+    background-attachment: contain;
+    background-size: cover;
+    display: flex;
+    flex-flow: column nowrap;
+  }
+    .menu{
+      background: rgba(0,0,0,.1);
+      display: flex;
+      flex-flow: row nowrap;
+      height: 60px;
+      align-items: center;
+      border-bottom: 1px solid rgba(255,255,255,.5)
+    }
+      .logo{
+        font-family: 'Francois One', sans-serif;
+        flex: 1 1 auto;
+        }
+        .logo a{
+          color: white;
+          font-size: 40px;
+        }
+        .logo a:hover{
+          color:#f7fd04;
+        }
+      .nav{
+        flex: 5 1 auto;
+      }
+        .nav a{
+          color: white;
+          font-size: 12px;
+          text-transform: uppercase;
+          padding: 0 10px;
+          letter-spacing: 2px;
+        }
+        .nav a:hover{
+          color:#f7fd04;
+        }
+      .redes{
+        flex: 1 1 auto;
+        display: flex;
+      }
+        .redes a{
+          font-size: 18px;
+          color:white;
+          padding: 0 5px;
+        }
+        .redes a:hover{
+          color:#f7fd04;
+        }
+    .texto-principal{
+      /*background: #ffcead;*/
+      height: 500px;
+      display: flex;
+      align-items: center;
+      }
+      h1{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 28px;
+        color: white;
+        text-emphasis: bold;
+        font-weight: 300;
+        text-align: center;
+        line-height: 1.6;
+      }
+  .section{
+    background: whitesmoke;
+    display: flex;
+    margin-bottom: 10px;
+  }
+    .articulos{
+      background: whitesmoke;
+      flex: 2 1 auto;
+      display: flex;
+      flex-flow: row wrap;
+    }
+      .article{
+        flex: 1 1 40%;
+        color: #1c1c1c;
+        font-size: 13px;
+        letter-spacing: 1px;
+        margin: 10px 10px 0 0px;
+        flex: 1 1 45%;
+        background: #ececec;
+      }
+      .article img{
+        width: 100%;
+      }
+    .aside{
+      /*background: #7b113a;*/
+      flex: 1 1 auto;
+      margin: 10px 5px 10px 0;
+      width: 200%;
+    }
+    .aside img{
+      width: 100%;
+    }
+    h4{
+      background: #1c1c1c;
+      color: white;
+      padding: 10px;
+      text-transform: uppercase;
+    }
+      .publicidad{
+        /*background: #1597bb;*/
+      }
+      
+  .footer{
+    background: #1c1c1c;
+    display: flex;
+    justify-content: center;
+  }
+    .pie{
+      /*background: #bfcba8;*/
+      text-align: center;
+    }
+      .pie p{
+        color: white;
+        font-size: 11px;
+        text-transform: uppercase;
+        padding: 20px 10px;
+        letter-spacing: 2px;
+      }
+
+  form{
+   width: 450px;
+    margin: auto; 
+    padding: 10px 20px 30px;
+    background: #eff1507c;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-top: 10px;
+  }
+
+  form,h3{
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+  }
+
+  input,textarea{
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 7px;
+  box-sizing: border-box;
+  font-size: 15px;
+  border: none;
+  }
+
+  textarea{
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+    min-width: 100%;
+  }
+
+  #boton{
+    background: #30333b;
+    color: whitesmoke;
+    padding: 15px;
+  }
+
+  #boton:hover{
+    cursor: pointer;
+  }
+
+  .flex-container {
+    display: flex;
+    background-color: #30333b;
+  }
+
+  .flex-container > div {
+    background-color: #f1f1f1;
+    margin: 50px;
+    margin-top:0;
+    margin-left: 150px;
+    padding: 200px;
+    font-size: 30px;
+  }
+
+
+@media all and (max-width: 950px){
+  .section{
+    flex-direction: column;
+  }
+  .menu{
+    flex-direction: column;
+    height: auto;
+  }
+  .aside{
+    display: flex;
+    justify-content: center;
+  }
+  h1{
+    font-size: 22px;
+  }
+}
+@media all and (max-width: 800px){
+.articulos{
+  flex-direction: column;
+  }
+
+@media all and (max-width: 650px){
+.off{
+  display: none;
+}  
+  .nav a{
+font-size: 30px;
+  }
+}
+
+@media all and (max-width: 500px){
+.aside{
+  flex-direction: column;
+  }
+}
+}
